@@ -4,23 +4,20 @@ import {
   StyleSheet,
   Text,
   Image,
-  Button,
   Alert,
+  Button,
 } from "react-native";
 
 export default function App() {
   console.log("App is Running");
-  const handlePress = () => console.log("Pressed");
-  const feedbackButton = () => Alert.alert("Fuck you");
+  // const handlePress = () => console.log("Icon Tapped");
+  const feedbackButton = () =>
+    Alert.prompt("Type your name", "Hello", (text) => console.log(text));
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text numberOfLines={1} onPress={handlePress}>
-        Hello React Native - A really really long text. Now I wanna make this
-        even longer and see what happens!
-      </Text>
-      <Image source={require("./assets/favicon.png")} />
-      <Button title="Press me" onPress={feedbackButton} />
+      <Text>Hello World</Text>
+      <Button color="dodgerblue" onPress={feedbackButton} title="Click me" />
     </SafeAreaView>
   );
 }
@@ -30,6 +27,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "orange",
+    backgroundColor: "white",
   },
 });
