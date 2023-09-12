@@ -1,23 +1,15 @@
 import React from "react";
-import {
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  Image,
-  Alert,
-  Button,
-} from "react-native";
+import { SafeAreaView, StyleSheet, View, Text } from "react-native";
 
 export default function App() {
   console.log("App is Running");
-  // const handlePress = () => console.log("Icon Tapped");
-  const feedbackButton = () =>
-    Alert.prompt("Type your name", "Hello", (text) => console.log(text));
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>Hello World</Text>
-      <Button color="dodgerblue" onPress={feedbackButton} title="Click me" />
+    <SafeAreaView>
+      <View style={styles.background1} />
+      <View style={styles.background2} />
+      <View style={styles.background3} />
+      <Text>Hello</Text>
     </SafeAreaView>
   );
 }
@@ -27,6 +19,18 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "white",
+    backgroundColor: "dodgerblue",
+  },
+  background1: {
+    backgroundColor: "dodgerblue",
+    flex: 1,
+  },
+  background2: {
+    backgroundColor: "orange",
+    flex: 1,
+  },
+  background3: {
+    backgroundColor: "red",
+    flex: 1,
   },
 });

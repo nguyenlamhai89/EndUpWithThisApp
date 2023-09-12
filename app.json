@@ -3,9 +3,9 @@
     "name": "EndUpWithThisApp",
     "slug": "EndUpWithThisApp",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "default",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
